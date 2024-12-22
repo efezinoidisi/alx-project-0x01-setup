@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import { UserProps } from '@/interfaces';
 
 const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
+  if (!posts) return null;
   return (
     <div className='flex flex-col h-screen'>
       <Header />
