@@ -26,7 +26,7 @@ const Posts: React.FC<{ posts: PostProps[] }> = ({ posts }) => {
             Add Post
           </button>
         </div>
-        <div className='grid grid-cols-3 gap-2 '>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-2 '>
           {posts?.map(({ title, body, userId, id }: PostProps, key: number) => (
             <PostCard
               title={title}
